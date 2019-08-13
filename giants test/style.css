@@ -1,0 +1,582 @@
+@charset “utf-8”;
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tr, th, td,
+article, aside, canvas, details, embed,
+figure, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1;
+  background-color: #fff;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  background-color: #fc6c15;
+  padding: 17px 0;
+}
+
+h3 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 24px;
+  text-align: center;
+  margin: 30px 0;
+  letter-spacing: 3px;
+}
+
+h5 {
+  font-size: 18px;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: solid 1px #9c9c9c;
+  line-height: 1.7;
+}
+
+.gray_box {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  background-color: #969696;
+  padding: 20px 0;
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/*-----------container-------------*/
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h1 p {
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+}
+
+.container .pl_1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container .fight {
+  background-color: #000;
+  padding: 17px 0;
+  margin-top: -35px;
+}
+
+.container .fight h2 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.container .fight p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 21.12px;
+  letter-spacing: 1px;
+}
+
+.container .fight .large {
+  font-size: 40px;
+}
+
+.container .fight .orange_text {
+  color: #fc6c15;
+}
+
+.container .fight .wh_squre {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  vertical-align: super;
+  margin-left: 5px;
+}
+
+.pl_1 {
+  margin-top: -25px;
+}
+
+/*-----------top_btn-------------*/
+.top_btn ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 680px;
+  width: 85.2%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.top_btn li {
+  background-color: #fc6c15;
+  font-size: 17px;
+  color: #fff;
+  font-weight: bold;
+  width: 220px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.content_new_jh {
+  margin-top: 70px;
+}
+
+.content_new_jh .img_l_r {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.content_new_jh .img_l {
+  margin-right: 15px;
+}
+
+.content_new_jh .img_l p {
+  font-size: 15px;
+}
+
+.content_new_jh .img_r p {
+  font-size: 15px;
+}
+
+.notice_btn {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 50px;
+  background-color: #fc6c15;
+  color: #fff;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.notice_btn p {
+  font-size: 18px;
+}
+
+/*-----------content_ticket-------------*/
+.content_ticket {
+  margin: 70px 0;
+}
+
+.content_ticket .gr_p {
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content_ticket .gr_red {
+  color: #ea5d8d;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.studium_img {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.studium_img img {
+  width: 100%;
+}
+
+.nomal {
+  text-align: -webkit-center;
+  margin-top: 50px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.nomal .cube_1 {
+  color: #ea5d8d;
+}
+
+.nomal .cube_2 {
+  color: #a9d6df;
+}
+
+.nomal .cube_3 {
+  color: #9a79b4;
+}
+
+.nomal .cube_4 {
+  color: #7380be;
+}
+
+.nomal .cube_5 {
+  color: #7fbe25;
+}
+
+.nomal .cube_6 {
+  color: #ffe109;
+}
+
+.nomal .cube_7 {
+  color: #f49e36;
+}
+
+.nomal .cube_8 {
+  color: #f49e36;
+}
+
+.nomal .cube_9 {
+  color: #dbdddd;
+}
+
+.nomal .chair {
+  padding-left: 10px;
+}
+
+.nomal .chair, .price {
+  font-size: 15px;
+}
+
+.nomal .price {
+  text-align: right;
+}
+
+.nomal .info {
+  max-width: 380px;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/*-----------small_logo-------------*/
+.small_logo {
+  display: flex;
+  max-width: 680px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #969696;
+}
+
+.get_get {
+  margin-right: 20px;
+}
+
+.get_text {
+  margin-bottom: 40px;
+}
+
+.get_text span, p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.content_ticket_get {
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/*-----------content_info_danger-------------*/
+.content_info_danger {
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.car_chair {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.car_chair p {
+  font-size: 13.1px;
+}
+
+.price_gray .gr_box {
+  background-color: #969696;
+  padding: 5px 15px;
+  color: #fff;
+  margin-right: 15px;
+}
+
+/*-----------content_access-------------*/
+.content_access {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: auto;
+}
+
+.acc_sta p {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.subway {
+  display: table;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.subway p {
+  font-size: 15px;
+  padding-right: 30px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.subway ul {
+  font-size: 12.95px;
+  line-height: 1.7;
+  padding: 0;
+  padding-left: 30px;
+  border-left: 3px solid #20546a;
+}
+
+.goo_map {
+  max-width: 680px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.goo_map img {
+  width: 100%;
+}
+
+.pa_top {
+  text-align: center;
+  margin: 90px 0 0 0;
+}
+
+/*-----------footer-------------*/
+.footer {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fc6c15;
+  padding: 30px 0;
+  letter-spacing: 1px;
+}
+
+.sp_style {
+  display: none;
+}
+
+.sp_style_1 {
+  display: none;
+}
+
+/*-------------レスポンシブ-------------*/
+@media screen and (max-width:768px) {
+  .top_btn ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 680px;
+    width: 85.2%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .container .fight h2 {
+    color: #fff;
+    font-size: 5vw;
+  }
+
+  .container .fight p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 5vw;
+    letter-spacing: 1px;
+  }
+
+  .content_new_jh h3 {
+    font-size: 28px;
+  }
+
+  .container .fight .large {
+    font-size: 10vw;
+  }
+
+  .content_new_jh .img_l_r {
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .content_new_jh .img_l {
+    /* margin-right: 15px; */
+    margin: 0 auto;
+  }
+
+  .container .fight {
+    background-color: #000;
+    padding: 17px 0;
+    margin-top: -35px;
+  }
+
+  .top_btn li {
+    width: 32%;
+    font-size: 2vw;
+    padding: 10px;
+  }
+
+  .notice_btn, .gray_box,
+  .studium_img img {
+    width: 89%;
+  }
+
+  .content_ticket h3 {
+    font-size: 6vw;
+  }
+
+  .content_ticket .gr_p {
+    font-size: 4vw;
+    padding: 0;
+  }
+
+  .nomal {
+    width: 89%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .small_logo {
+    display: block;
+  }
+
+  .get_get {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .get_text {
+    font-size: 3vw;
+  }
+
+  .get_text h5 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .get_text span, p {
+    /* margin-left: 25px; */
+  }
+
+  .goo_map {
+    width: 89%;
+  }
+
+  /* .goo_map img {
+    width: 89%;
+  } */
+  .subway {
+    display: block;
+    width: 89%;
+  }
+
+  .subway ul {
+    font-size: 2vw;
+    line-height: 1.7;
+    padding: 0;
+    border-left: none;
+  }
+
+  .subway p {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  .acc_sta p {
+    margin: 0 auto;
+  }
+
+  .content_info_danger {
+    width: 89%;
+  }
+
+  .hanbai {
+    font-size: 5vw;
+    width: 89%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .sp_style {
+    display: block;
+  }
+
+  .sp_style_1 {
+    display: block;
+  }
+
+  .nomal .chair, .price {
+    font-size: 3vw;
+  }
+
+  .nomal .info {
+    font-size: 1vw;
+    margin-left: 23px;
+  }
+
+  .content_ticket_get {
+    width: 89%;
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+}

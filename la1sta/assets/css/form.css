@@ -1,0 +1,1201 @@
+/* ------------------------------------------ */
+/* #page34 イベント参加予約                   */
+/* #page36 └送信完了画面                     */
+/* #page72 お問い合わせ                       */
+/* #page73 └送信完了画面                     */
+/* #page69 資料請求                           */
+/* #page70 └送信完了画面                     */
+/* #page21 資料請求(PG)                       */
+/* #page22 └送信完了画面                     */
+/* #page59 自社説明会予約                     */ /*20160507追加*/
+/* #page60 └送信完了画面                     */ /*20160507追加*/
+/* #page62 パートスタッフエントリー           */ /*20160524追加*/
+/* #page63 └送信完了画面                     */ /*20160524追加*/
+/* ------------------------------------------ */
+/* iframe height 設定                         */
+/* ------------------------------------------ */
+#page72 #toiawase_pg iframe {
+  height: 900px;
+}
+#page21 #toiawase_pg iframe {
+  height: 1300px;
+}
+#page34 #toiawase_pg iframe {
+  height: 1300px;
+}
+#page31 #toiawase_pg iframe {
+  height: 1300px;
+}
+#page59 #toiawase_pg iframe {
+  height: 850px;
+}
+#page62 #toiawase_pg iframe {
+  height: 850px;
+}
+
+@media screen and (max-width: 829px) {
+  #page72 #toiawase_pg iframe {
+    height: 1100px;
+  }
+  #page21 #toiawase_pg iframe {
+    height: 1400px;
+  }
+  #page31 #toiawase_pg iframe {
+    height: 1500px;
+  }
+  #page59 #toiawase_pg iframe {
+    height: 1000px;
+  }
+  #page62 #toiawase_pg iframe {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #page72 #toiawase_pg iframe {
+    height: 1100px;
+  }
+  #page21 #toiawase_pg iframe {
+    height: 2000px;
+  }
+  #page31 #toiawase_pg iframe {
+    height: 1550px;
+  }
+  #page59 #toiawase_pg iframe {
+    height: 1000px;
+  }
+  #page62 #toiawase_pg iframe {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  #page34 #toiawase_pg iframe {
+    height: 1500px;
+  }
+}
+@media screen and (max-width: 599px) {
+  #page34 #toiawase_pg iframe {
+    height: 1600px;
+  }
+}
+
+/* ------------------------------------------ */
+/* Web Fonts                                  */
+/* ------------------------------------------ */
+#toiawase_pg .toiawaseTopBox p.lead {
+  font-family: "ゴシックMB101 M";
+} /* ヘッド部リードテキスト */
+#toiawase_pg h3 {
+  font-family: "ゴシックMB101 M";
+} /* イベント予約フォームのタイトル */
+#toiawase_pg .tel_fax dl dt {
+  font-family: "ゴシックMB101 M";
+} /* お電話での○○○ （フッタ部左のテキスト） */
+#toiawase_pg .tel_fax dl dd .fst {
+  font-family: "Crimson Text", serif;
+} /* 電話番号、FAX番号（フッタ部右のテキスト */
+
+/* ------------------------------------------ */
+/* form ブロック共通                          */
+/* ------------------------------------------ */
+#toiawase_pg {
+  padding: 0 30px;
+}
+#page34 #toiawase_pg {
+  padding: 20px 0 0;
+}
+
+@media screen and (max-width: 799px) {
+  #page34 #toiawase_pg {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #toiawase_pg {
+    padding: 0;
+  }
+}
+
+/* ------------------------------------------ */
+/* ヘッド部：導入部テキスト                   */
+/* ------------------------------------------ */
+#page34 #toiawase_pg h3 {
+  float: left;
+  width: 50%;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  font-family: "ゴシックMB101 M";
+}
+
+#toiawase_pg .toiawaseTopBox {
+  padding: 0 0 15px;
+}
+#toiawase_pg .toiawaseTopBox p.lead {
+  padding: 0 0 25px;
+}
+
+@media screen and (max-width: 999px) {
+  #page34 #toiawase_pg h3 {
+    float: none;
+    width: auto;
+  }
+  #toiawase_pg .toiawaseTopBox p.lead {
+    padding: 0;
+  }
+}
+
+/* ------------------------------------------ */
+/* ヘッド部：電話・ファックスの方はこちら     */
+/* ------------------------------------------ */
+#toiawase_pg p.tel_fax_link {
+  padding: 0;
+}
+#page34 #toiawase_pg p.tel_fax_link {
+  float: right;
+  padding: 0;
+  text-align: right;
+}
+
+#toiawase_pg p.tel_fax_link > span {
+  color: #78a400;
+}
+
+.tel_fax dl {
+  display: block;
+  padding: 50px 0 55px 0;
+  border-top: 1px #4b4b4e solid;
+}
+
+.tel_fax dl:after {
+  content: ".";
+  height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+.tel_fax dl dt {
+  line-height: 1.8;
+  letter-spacing: -0.1px;
+  font-size: 1.2em;
+}
+
+.tel_fax dl dd .fst {
+  line-height: 1.2;
+}
+.tel_fax dl dd .lst {
+  padding-top: 3px;
+}
+
+.tel_fax dl dd .sp,
+.tel_fax dl dd .tel,
+.tel_fax dl dd .fax {
+  font-size: 2em;
+  color: #15486b;
+  vertical-align: sub;
+}
+
+.tel_fax dl dd .tit {
+  font-size: 2em;
+  color: #15486b;
+  font-weight: normal;
+  vertical-align: sub;
+}
+
+.tel_fax dl dd .tel {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .tel_fax dl dt {
+    font-size: 1.4em;
+  }
+  .tel_fax dl dd .sp {
+    display: none;
+  }
+  .tel_fax dl dd .tel {
+    display: inline;
+    font-size: 2.8em;
+  }
+  .tel_fax dl dd .fax {
+    font-size: 2.8em;
+  }
+  .tel_fax dl dd .tit {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .tel_fax dl dt {
+    float: left;
+    display: inline-block;
+    padding: 15px 0;
+  }
+
+  .tel_fax dl dd {
+    float: right;
+    display: inline-block;
+    min-width: 320px;
+  }
+}
+
+/* ------------------------------------------ */
+/* 送信完了画面                               */
+/* ------------------------------------------ */
+#toiawase_pg .thanks {
+  width: auto;
+  padding: 40px 0 100px;
+}
+#toiawase_pg .thanks p {
+  text-align: center;
+}
+
+@media screen and (max-width: 999px) {
+  #toiawase_pg .thanks {
+    padding: 20px 0 40px;
+  }
+}
+
+/* ------------------------------------------ */
+/* 資料請求PG - 資料一覧                      */
+/* ------------------------------------------ */
+/* Border Color                               */
+/* ------------------------------------------ */
+#form_box .se_box {
+  border-top: 2px solid #15486b;
+  border-bottom: 2px solid #15486b;
+}
+
+/* ------------------------------------------ */
+/* Text Color                                 */
+/* ------------------------------------------ */
+#form_main .se_box ul li .ttl {
+  color: #15486b;
+}
+
+/* ------------------------------------------ */
+/* Layout                                     */
+/* ------------------------------------------ */
+#havetochoice {
+  margin: 10px 0 30px;
+  padding-bottom: 0;
+}
+
+#form_box .se_box {
+  display: block;
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#form_box .se_box ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#form_box .se_box ul li {
+  width: 48%;
+  height: auto;
+  margin: 0 2% 20px 0;
+  padding: 0;
+  background: none repeat scroll 0 0 #ffffff;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#form_box .se_box ul li .ttl {
+  display: block;
+  max-width: 330px;
+  margin-left: 1em;
+  text-indent: -20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#form_box .se_box ul li p {
+  display: table-cell;
+  vertical-align: top;
+}
+#form_box .se_box ul li p:last-child {
+  width: 198px;
+  padding-left: 5px;
+  line-height: 1.5;
+}
+#form_box .se_box ul li p.img {
+  width: 242px;
+  text-align: left;
+}
+#form_box #model_yoyaku li p.img img {
+  width: 100%;
+}
+.mainBox .mailform dd textarea {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  #form_box .se_box ul li:nth-child(2n + 1),
+  #form_box .se_box ul li p:last-child {
+    width: auto;
+  }
+  #form_box .se_box ul li {
+    float: none;
+    width: auto;
+  }
+  #page34 #toiawase_pg {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 370px) {
+  #havetochoice {
+    letter-spacing: 0;
+  }
+  #form_box .se_box {
+    width: auto;
+    padding: 0 10px;
+  }
+  #form_box .se_box ul li:nth-child(odd),
+  #form_box .se_box ul li p:last-child,
+  #form_box .se_box ul li p.img {
+    width: 100%;
+  }
+  #form_box .se_box ul li p.img img,
+  #form_box .se_box ul li p {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* ------------------------------------------ */
+/* STEP                                       */
+/* - - - - - - - - - - - - - - - - - - - - -  */
+/* STEP部のソースはform.cssと全く同じです     */
+/* - - - - - - - - - - - - - - - - - - - - -  */
+/* Color Setting                              */
+/* - - - - - - - - - - - - - - - - - - - - -  */
+/* Border Color                               */
+/* ------------------------------------------ */
+ul#top_box {
+  border-bottom: 1px solid #e23d3d;
+} /* STEP下のライン */
+
+@media screen and (max-width: 999px) {
+  /* STEP2両端のライン(TB/SP) */
+  ul#top_box li:nth-child(2) {
+    border-right: solid 1px #ffffff;
+    border-left: solid 1px #ffffff;
+  }
+  ul#top_box.step4 li:nth-child(3) {
+    border-right: solid 1px #ffffff;
+  }
+}
+
+/* ------------------------------------------ */
+/* Background Color                           */
+/* ------------------------------------------ */
+ul#top_box li {
+  background-color: #fef1cc;
+  font-size: 14px;
+} /* STEP 背景色 */
+ul#top_box li.on {
+  background-color: #15486b;
+} /* STEP 背景色（現在地） */
+ul#top_box li span.css3 {
+  background-color: #c35a51;
+} /* STEP 円形 背景色 */
+ul#top_box li.on span.css3 {
+  background-color: #c35a51;
+} /* STEP 円形 背景色（現在地） */
+
+/* ------------------------------------------ */
+/* Text Color                                 */
+/* ------------------------------------------ */
+ul#top_box li {
+  color: #231815;
+} /* STEPテキスト */
+ul#top_box li.on {
+  color: #ffffff;
+} /* STEPテキスト（現在地） */
+ul#top_box li span.css3 {
+  color: #ffffff;
+} /* STEP 円形 テキスト */
+ul#top_box li.on span.css3 {
+  color: #ffffff;
+} /* STEP 円形 テキスト（現在地） */
+
+/* ------------------------------------------ */
+/* Layout                                     */
+/* ------------------------------------------ */
+
+ul#top_box {
+  display: block;
+  min-width: 290px;
+  margin-bottom: 50px;
+  padding: 0 0 1px;
+  overflow: hidden;
+}
+
+ul#top_box li {
+  float: left;
+  margin: 1px;
+  text-align: center;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+
+ul#top_box li {
+  width: 34%;
+} /* STEP 3 */
+ul#top_box.step4 li {
+  width: 25.6%;
+} /* STEP 4 */
+ul#top_box li:nth-child(1) {
+  margin-left: -1%;
+} /* STEP 3&4 */
+ul#top_box li:nth-child(3) {
+  margin-right: -3%;
+} /* STEP 3 */
+ul#top_box.step4 li:nth-child(3) {
+  margin-right: 1px;
+} /* STEP 4 */
+ul#top_box.step4 li:nth-child(4) {
+  margin-right: -3%;
+} /* STEP 4 */
+
+ul#top_box li span {
+  display: inline-block;
+  margin: 16px 0;
+  line-height: 20px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  transform: skew(20deg);
+}
+
+ul#top_box li span.css3 {
+  zoom: 1;
+  position: relative;
+  margin-right: 10px;
+  padding: 1px 8px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px !important;
+      font-size: 10px;
+}
+
+ul#top_box li br {
+  display: none;
+}
+/*ショールーム展示場*/
+.yoyaku_pg ul#top_box li#tenji br#tenji2 {
+  display: inline;
+}
+.yoyaku_pg ul#top_box li#tenji.on span.css3 {
+  margin: 12px 0;
+}
+.yoyaku_pg ul#top_box li#tenji span.pc_txt {
+  line-height: 18px;
+  margin: 13px 0 2px;
+  text-align: left;
+  height: auto;
+}
+.yoyaku_pg ul#top_box li#tenji span.sp_txt {
+  display: none;
+}
+@media screen and (max-width: 769px) {
+  ul#top_box {
+    margin: 0 auto 45px;
+    text-align: center;
+  }
+
+  ul#top_box li:nth-child(1),
+  ul#top_box li {
+    width: 33.2%;
+    padding: 9px 0 6px;
+    margin-right: 0;
+    text-align: center;
+    line-height: normal;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    transform: skew(0deg);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  ul#top_box.step4 li:nth-child(1),
+  ul#top_box.step4 li {
+    width: 25%;
+    margin: 0;
+  }
+
+  ul#top_box li:nth-child(1) {
+    margin-left: 0;
+  }
+  ul#top_box li:nth-child(3) {
+    margin-right: 0;
+  }
+
+  ul#top_box.step4 li:nth-child(3),                  /* STEP 4 */
+	ul#top_box.step4 li:nth-child(4) {
+    margin-right: 0;
+  } /* STEP 4 */
+
+  ul#top_box li span {
+    margin: 0;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    transform: skew(0deg);
+  }
+
+  ul#top_box li span.css3 {
+    margin: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px !important;
+    line-height: 1.5;
+  }
+
+  ul#top_box li span.pc_txt {
+    display: none;
+  }
+  ul#top_box li span.sp_txt {
+    display: block;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 12px;
+  }
+  ul#top_box li br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  ul#top_box li:first-child,
+  ul#top_box li {
+    width: 33.1%;
+  }
+}
+
+/* ------------------------------------------ */
+/* 必須・任意アイコン                         */
+/* ------------------------------------------ */
+/* Background Color                           */
+/* ------------------------------------------ */
+b.nortice {
+  background: #f0734a;
+} /* 必須 */
+b.option {
+  background: #dcdddd;
+} /* 任意 */
+
+/* ------------------------------------------ */
+/* Text Color                                 */
+/* ------------------------------------------ */
+b.nortice {
+  color: #ffffff;
+} /* 必須 */
+b.option {
+  color: #231815;
+} /* 任意 */
+
+/* ------------------------------------------ */
+/* Layout                                     */
+/* ------------------------------------------ */
+b.nortice,
+b.option {
+  float: left;
+  padding: 2px 6px;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* ------------------------------------------ */
+/* ボタン                                     */
+/* - - - - - - - - - - - - - - - - - - - - -  */
+/* Color Setting                              */
+/* - - - - - - - - - - - - - - - - - - - - -  */
+/* Border Color                               */
+/* ------------------------------------------ */
+#form_box .btn input {
+  border: 2px solid #15486b;
+  border-radius: 5px;
+  background: #15486b;
+  color: #fff;
+  transition: .4s;
+}
+#form_box .btn input:hover {
+  opacity: .7;
+}
+input[type="button"] {
+  -webkit-appearance: none;
+}
+/* ------------------------------------------ */
+/* Layout                                     */
+/* ------------------------------------------ */
+#form_box .btn:after {
+  content: ".";
+  height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+#form_box .btn {
+  display: inline-block;
+}
+
+#form_box .btn {
+  width: 100%;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+#form_box .btn input {
+  display: inline-block;
+  width: 320px;
+  padding: 15px;
+  margin: 0 10px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#form_box #error_page p a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 769px) {
+  #form_box {
+    width: 100%;
+  }
+  #form_box .btn {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* ------------------------------------------ */
+/* 資料請求ページ　上部                                     */
+/* ------------------------------------------ */
+#siryo_top {
+  width: 1000px;
+  margin: 0 auto;
+}
+#siryo_top .mainimg {
+  padding-bottom: 5px;
+}
+#siryo_top h2 {
+  overflow: hidden;
+}
+#siryo_top h2 .leftbox {
+  float: left;
+  margin-top: 70px;
+  padding-bottom: 0;
+  width: 375px;
+  background: url(../img/form/siryo/img_03.png) no-repeat left center;
+  font-family: "FOT-筑紫明朝 Pr5 B";
+  padding-left: 230px;
+  line-height: 1.4;
+}
+#siryo_top h2 .leftbox .txt01 {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+  padding-left: 5px;
+}
+#siryo_top h2 .leftbox .txt02 {
+  display: block;
+  background: url(../img/form/siryo/img_04.png) no-repeat center center;
+  width: 352px;
+  height: 32px;
+  color: #fff;
+  font-size: 1.4em;
+  padding-top: 3px;
+  text-align: center;
+}
+#siryo_top h2 .rightbox {
+  float: right;
+  width: 395px;
+  padding-bottom: 5px;
+}
+#siryo_top h3 {
+  text-align: center;
+  font-family: "ゴシックMB101 M";
+  font-size: 1.4em;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+#siryo_top h3 .txt01 {
+  color: #733417;
+  display: block;
+}
+#siryo_top h3 .txt02 {
+  color: #828128;
+  display: block;
+}
+#siryo_btm {
+  width: 100%;
+  margin-bottom: 75px;
+  position: relative;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAKUlEQVQImWP4+PLC/48vL/z/9/X2/39fb/9nQOZ8fHnhPwMyBy6ArA0A7iU7sVLaPAEAAAAASUVORK5CYII=);
+}
+#siryo_btm:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  height: 3px;
+  width: 100%;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAADCAYAAABbNsX4AAAAJ0lEQVQImWP48urEfxj+++fb/79/vv1nQBb89fXp/19fn6IKwlQCAODpOCwszoAMAAAAAElFTkSuQmCC)
+    repeat-x;
+}
+#siryo_btm:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  height: 3px;
+  width: 100%;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAADCAYAAABbNsX4AAAAJ0lEQVQImWP48urEfxj+++fb/79/vv1nQBb89fXp/19fn6IKwlQCAODpOCwszoAMAAAAAElFTkSuQmCC)
+    repeat-x;
+}
+#siryo_btm .inner1 {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+#siryo_btm .inner1 li {
+  margin-bottom: 55px;
+  position: relative;
+  padding: 20px 22px 5px;
+  background: url(../img/form/siryo/bg.png) repeat-y center top;
+}
+#siryo_btm .inner1 li:before {
+  content: "";
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  background: url(../img/form/siryo/bg_top.png) no-repeat center top;
+}
+#siryo_btm .inner1 li:after {
+  content: "";
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background: url(../img/form/siryo/bg_btm.png) no-repeat center bottom;
+}
+#siryo_btm .inner1 li .no {
+  font-family: "ゴシックMB101 M";
+  color: #733417;
+  font-size: 1.2em;
+  padding-bottom: 5px;
+  background-repeat: no-repeat;
+  background-position: right 2px;
+  padding-right: 25px;
+  display: inline-block;
+}
+#siryo_btm .inner1 li.no1 .no {
+  background-image: url(../img/form/siryo/no1.png);
+}
+#siryo_btm .inner1 li.no2 .no {
+  background-image: url(../img/form/siryo/no2.png);
+}
+#siryo_btm .inner1 li.no3 .no {
+  background-image: url(../img/form/siryo/no3.png);
+}
+#siryo_btm .inner1 li .ttl {
+  font-family: "FOT-筑紫明朝 Pr5 B";
+  font-size: 1.2em;
+  padding-bottom: 15px;
+  line-height: 1.3;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAYAAAB7Xa1eAAAAFklEQVQImWPo7+v739/X958BHeCSAABdSQqpsE7b+QAAAABJRU5ErkJggg==)
+    repeat-x left bottom;
+}
+#siryo_btm .inner1 li .ttl span {
+  font-size: 1.4rem;
+}
+#siryo_btm .inner1 li .txt {
+  padding: 10px 5px 0 5px;
+}
+#siryo_btm .inner2 {
+  max-width: 870px;
+  margin: 0 auto 12px;
+  clear: both;
+}
+#toiawase_pg.siryo_pg {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  #siryo_top {
+    width: auto;
+    padding: 0 15px;
+  }
+  #siryo_top .mainimg img {
+    width: 100%;
+    height: auto;
+  }
+  #siryo_top h2 .leftbox {
+    float: none;
+    margin: 20px auto;
+  }
+  #siryo_top h2 .rightbox {
+    float: none;
+    text-align: center;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  #siryo_top .mainimg img {
+    width: 100%;
+    height: auto;
+  }
+  #siryo_btm {
+    padding: 0 15px;
+    width: auto;
+    overflow: hidden;
+  }
+  #siryo_btm:after,
+  #siryo_btm:before {
+    right: -15px;
+    left: -15px;
+    width: auto;
+  }
+  #siryo_btm .inner1 {
+    width: 100%;
+    table-layout: fixed;
+  }
+  #siryo_btm table img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  #toiawase_pg.siryo_pg {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #siryo_btm .inner1 {
+    padding-top: 30px;
+  }
+  #siryo_btm table td {
+    display: block;
+    width: auto;
+  }
+  #siryo_btm table img {
+    margin: auto;
+    display: block;
+  }
+  #siryo_btm .inner1 ul {
+    margin-top: 20px;
+  }
+  #siryo_btm .inner1 li:before,
+  #siryo_btm .inner1 li:after,
+  #siryo_btm .inner1 li {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #siryo_top h2 .leftbox {
+    width: 355px;
+    padding-left: 190px;
+    background: url(../img/form/siryo/img_03.png) no-repeat left center;
+    -webkit-background-size: 172px auto;
+    -moz-background-size: 172px auto;
+    background-size: 172px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #siryo_top h2 .leftbox {
+    width: auto;
+    padding: 85px 0 20px;
+    background-position: left top;
+  }
+  #siryo_top h2 .leftbox .txt01 {
+    font-size: 1.25em;
+  }
+  #siryo_top h2 .leftbox .txt02 {
+    background: url(../img/form/siryo/img_04.png) no-repeat center center;
+    -webkit-background-size: 290px auto;
+    -moz-background-size: 290px auto;
+    background-size: 290px auto;
+    width: 290px;
+    height: 26px;
+    color: #fff;
+    font-size: 1.25em;
+    padding-top: 2px;
+  }
+
+  #siryo_top h2 .rightbox img {
+    width: 100%;
+    height: auto;
+    max-width: 384px;
+  }
+  #siryo_top h3 {
+    font-size: 1.1em;
+  }
+  #siryo_top h3 img {
+    height: 26px;
+    width: auto;
+    vertical-align: top;
+  }
+  #siryo_btm .inner1 li .no {
+    font-size: 1em;
+  }
+  #siryo_btm .inner1 li .ttl {
+    font-size: 1.1em;
+  }
+  #siryo_btm .inner1 li .ttl span {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #siryo_btm .inner1 li {
+    background-size: contain;
+  }
+}
+/* formthanks */
+.formthanks{
+    margin: 60px auto 100px;
+}
+.formthanks_head{
+    margin-bottom: 50px;
+}
+.formthanks_body{
+    padding: 60px 0;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0;
+    border: 1px solid #ddd;
+}
+.formthanks_heading{
+    text-align: center;
+    font-size: 24px;
+    color: #15486b;
+    font-weight: normal;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #15486b;
+}
+.formthanks_txt{
+    text-align: center;
+    line-height: 1.8;
+}
+.mfp_element_submit {
+
+}
+
+
+.mfp_element_submit,
+#mfp_button_send {
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #c25438;
+    margin: 0 auto 50px 11px;
+    max-width: 45%;
+    width: 45%;
+    color: #fff;
+    border: 2px solid #c25438;
+    cursor: pointer;
+    font-size: 16px;
+}
+.mfp_element_reset,
+#mfp_button_cancel {
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #15486b;
+    margin: 0 auto 50px 11px;
+    max-width: 45%;
+    width: 45%;
+    color: #fff;
+    border: 2px solid #15486b;
+    cursor: pointer;
+    font-size: 16px;
+}
+.mfp_element_back{
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+    margin: 0 auto 50px 11px;
+    max-width: 45%;
+    width: 45%;
+    color: #15486b;
+    border: 2px solid #15486b;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form#mailformpro dl dt {
+    float: left;
+    width: 230px;
+    clear: both;
+    font-size: 14px;
+    padding: 23px 0px 0 20px;
+    text-align: right;
+}
+@media screen and (max-width: 800px) {
+  .mfp_element_submit, .mfp_element_reset, .mfp_element_back, .mfp_element_button {
+    padding: 15px;
+  }
+  table#mfp_confirm_table tr th {
+     white-space: normal;
+    width: 40%;
+  }
+  table#mfp_confirm_table tr th, table#mfp_confirm_table tr td {
+    text-align: left;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 750px) {
+  div.mfp_buttons button {
+    font-size: 12px;
+  }
+  .mfp_element_submit, .mfp_element_reset, .mfp_element_back, .mfp_element_button {
+    padding: 12px;
+  }
+  .formthanks {
+    margin: 10% 0;
+  }
+  .formthanks_head {
+    margin-bottom: 10%;
+}
+  .formthanks_heading{
+      font-size: 18px;
+      line-height: 1.3;
+  }
+  .formthanks_body {
+    padding: 60px 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+    border: 1px solid #ddd;
+  }
+  .formthanks_txt {
+    text-align: left;
+  }
+}
+form#mailformpro input.middle {
+    max-width: 90%;
+    font-size: 1rem;
+}
+form#mailformpro select.middle {
+    max-width: 90%;
+    font-size: 1rem;
+}
+form#mailformpro textarea.mfp {
+    max-width: 90%;
+    font-size: 1rem;
+}
+
+form#mailformpro input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+    border: solid 1px #eee;
+    background: #eee;
+    padding: 8px;
+    margin: 2px;
+    vertical-align: middle;
+}
+form#mailformpro select {
+    border: solid 1px #eee;
+    background-color: #eee;
+    padding: 8px;
+    margin: 2px;
+    vertical-align: middle;
+}
+form#mailformpro textarea {
+    border: solid 1px #eee;
+    background-color: #eee;
+    padding: 8px;
+    margin: 2px;
+    vertical-align: middle;
+}
+#form p.art{
+	padding-bottom: 15px;
+}
+.tojitsu_text {
+  margin-top: 10px;
+}
+.tojitsu_text a {
+  color: #15486b;
+  margin-top: 10px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+#form select {
+  height: 36px;
+  font-size: 1rem;
+}
+@media screen and (max-width: 750px) {
+	form#mailformpro input.middle {
+	    max-width: 100%;
+	    font-size: 1rem;
+	}
+  form#mailformpro select {
+  width: 100%;
+      font-size: 0.9rem;
+  }
+	form#mailformpro select.middle {
+    max-width: 100%;
+    font-size: 0.9rem;
+	}
+	form#mailformpro textarea.mfp {
+	    max-width: 100%;
+	    font-size: 1rem;
+	}
+	form#mailformpro dl dt {
+	    width: 96%;
+	}
+  #form select {
+    /* height: auto; */
+    font-size: 1rem;
+  }
+  .tojitsu_text a {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.6em;
+    font-weight: normal;
+    background: #15486b;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+  }
+  .tojitsu_text a::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+    right: 20px;
+  }
+
+}

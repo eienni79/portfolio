@@ -1,0 +1,495 @@
+@charset "UTF-8";
+
+.sp_br {
+  display: none;
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+
+.text_top .yellowbar {
+  background-image: url(../img/yellowbar.png);
+}
+
+h2 {
+  font-size: 20px;
+  color: #bba97a;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  padding: 50px 0 25px 0;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+h3 {
+  font-size: 18px;
+  color: #333333;
+  margin: 40px 0 20px 0;
+}
+
+.header_tp {
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.header_tp p {
+  font-size: 1.3vw;
+  font-weight: bold;
+  position: absolute;
+  bottom: 55px;
+  left: 35%;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.text_top {
+  position: relative;
+  padding-top: 20px;
+}
+
+.contents_Wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text_top h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.text_top span {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 2px 1px 0 #000, -2px -1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, 0px 2px 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 0 0 #000;
+  letter-spacing: 5px;
+  background-image: url(../../img/yellowbar.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 15px;
+}
+
+.text_top p {
+  text-align: center;
+  font-size: 18px;
+  margin: 50px 0;
+  color: #666666;
+  font-weight: bold;
+}
+
+.consulting {
+  display: flex;
+}
+
+.consult_left {
+  width: 40%;
+}
+
+.money span {
+  color: #bba97a;
+}
+
+.money ul {
+  padding-bottom: 15px;
+}
+
+.money ul li {
+  font-size: 15px;
+  line-height: 2;
+}
+
+.home_contents span {
+  color: #bba97a;
+}
+
+.ggm {
+  margin-top: 25px;
+}
+
+.ggm iframe {
+  max-width: 1000px;
+  height: 450px;
+  width: 100%;
+}
+
+.house_con_l img {
+  width: 100%;
+}
+
+.house_con_r img {
+  width: 57%;
+}
+
+.house_front_l {
+  float: left;
+}
+
+.house_front_r {
+  float: right;
+}
+
+.home_contents {
+  padding-bottom: 100px;
+}
+
+.house_contents {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: auto;
+}
+
+.house_con {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 70px;
+  overflow: hidden;
+}
+
+.house_con_r {
+  text-align: center;
+}
+
+.yuubin {
+  line-height: 2;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.yuubin p, span {
+  font-size: 15px;
+}
+
+.tel_num {
+  margin: 20px 0 30px 0;
+}
+
+.tel_num .tel {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.acsses {
+  padding: 25px 100px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.studio span {
+  font-size: 20px;
+  color: #bba97a;
+}
+
+.tel_app {
+  float: left;
+}
+
+.tel_app h2 {
+  border-bottom: none;
+  padding-top: 38px;
+}
+
+.tel_tel span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #15486b;
+}
+
+.tel_tel p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tel_tel {
+  float: right;
+  width: 50%;
+}
+
+.tel_tel .time {
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.application {
+  padding: 35px 0;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  overflow: hidden;
+}
+
+.reser_form h2 {
+  border-bottom: none;
+  padding: 45px 0 35px 0;
+}
+
+.reser_2 h3 {
+  margin-top: 0;
+}
+
+.reser_2 span {
+  color: #bba97a;
+}
+
+.document {
+  padding: 35px;
+  border: 4px solid #f2f2f2;
+  margin: 45px 0;
+}
+
+.hope {
+  line-height: 1.5;
+}
+
+.hope p {
+  color: #c59490;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.middle_1 {}
+}
+
+@media only screen and (max-width: 1000px) {
+  /* .header_tp p {
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 25px;
+    left: 34.5%;
+    text-align: center;
+    line-height: 1.7;
+  } */
+
+  .contents_Wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .ggm iframe {
+    max-width: 1000px;
+    height: 450px;
+    width: 100%;
+  }
+
+  .text_top .yellowbar {
+    width: 33%;
+    position: absolute;
+    top: 52px;
+    left: 30%;
+  }
+
+  .house_con {
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 25px;
+    overflow: hidden;
+  }
+
+  .house_front_r {
+    float: right;
+    padding: 1px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header_tp p {
+    font-size: 3.3vw;
+    font-weight: bold;
+    position: absolute;
+    bottom: 36%;
+    left: 12%;
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  .contents_Wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .ggm iframe {
+    width: 100%;
+    height: 450px;
+  }
+
+  .text_top h1 {
+    text-align: center;
+        font-size: 37px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+  }
+  .sp_br {
+    display: block;/ *blockでもinlineでも可 */
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .header_tp {
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .text_top h1 {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 1.7;
+  }
+
+  .text_top span {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 1px 0 #000, -2px -1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, 0px 2px 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 0 0 #000;
+    letter-spacing: 5px;
+  }
+
+  /* .header_tp p {
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -38px;
+    left: 12.5%;
+    text-align: center;
+    line-height: 1.7;
+  } */
+
+  .contents_Wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .ggm iframe {
+    width: 100%;
+    height: 450px;
+  }
+
+  .tel_app {
+    float: none;
+  }
+
+  .tel_tel {
+    float: none;
+    width: 100%;
+  }
+
+  .tel_tel span {
+    font-size: 29px;
+    font-weight: bold;
+    color: #15486b;
+  }
+
+  .reser_2 p {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .reser_2 h3 {
+    font-size: 12px;
+  }
+
+  .application {
+    padding: 0px 0 35px 0;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    overflow: hidden;
+  }
+
+  .consulting {
+    display: block;
+  }
+
+  .consult_left {
+    width: 100%;
+  }
+
+  .money ul {
+    padding-bottom: 0px;
+  }
+
+  .money ul li {
+    font-size: 13px;
+  }
+
+  .acsses {
+    padding: 25px 11px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background: #fff;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .tel_num .tel {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 12px;
+    color: #333333;
+    margin: 40px 0 20px 0;
+  }
+
+  .house_front_r {
+    float: right;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .hope p {
+    color: #c59490;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .house_con {
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 60px;
+    overflow: hidden;
+  }
+
+  .document {
+    padding: 25px;
+    border: 4px solid #f2f2f2;
+    margin: 45px 0;
+  }
+
+  .studio span {
+    font-size: 17px;
+    color: #bba97a;
+  }
+
+  .yuubin p, span {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 15px;
+    color: #bba97a;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    padding: 35px 0 25px 0;
+    border-bottom: 1px solid #a0a0a0;
+  }
+
+  .home_contents {
+    padding-bottom: 50px;
+  }
+
+  .sp_br {
+    display: block;/ *blockでもinlineでも可 */
+  }
+}

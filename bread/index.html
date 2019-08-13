@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="wispanh=device-wispanh, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>コッペパン専門店</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('.Toggle').click(function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+          $('.NavMenu').addClass('active'); //クラスを付与
+        } else {
+          $('.NavMenu').removeClass('active'); //クラスを外す
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="g_navi">
+      <ul>
+        <li><a href>ごあいさつ</a></li>
+        <li><a href>おしながき</a></li>
+        <li><img src="img/pankuzu-pan.png" alt=""></li>
+        <li><a href>店舗情報</a></li>
+        <li class="face"><a href><img src="img/facebook.png" alt=""></a></li>
+        <li><a href><img src="img/instagram.png" alt=""></a></li>
+      </ul>
+    </div>
+    <div class="sp">
+      <!-- ナビメニュー部分 -->
+      <nav class="NavMenu">
+        <ul>
+          <li><a href>ごあいさつ</a></li>
+          <li><a href>おしながき</a></li>
+          <li><a href>店舗情報</a></li>
+
+          <div class="top_sns">
+            <li class="fb_sns"><a href><img src="img/facebook.png" alt=""></a></li>
+            <li><a href><img src="img/instagram.png" alt=""></a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガーメニュー部分 -->
+
+      <div class="to_lo">
+        <div class="Toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="logo_l"><img src="img/pankuzu-pan.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top_img">
+      <img src="img/mainbread.png" alt="">
+    </div>
+
+  </header>
+
+  <main id="main">
+    <div class="about">
+      <div class="cen-image-ter">
+        <img src="img/kakko.png" alt="">
+        <h2 class="head_1">ごあいさつ</h2>
+      </div>
+      <p>ヤンキース田中将大投手（２９）とエンゼルス大谷翔平投手（２３）が</br>
+        ２７日（日本時間２８日）、エンゼルスタジアムでの試合前、</br>
+        メジャーで初めて対面した。
+      </p>
+      <p>
+        ２人が直接会うのは２０１６年オフ、都内で合同自主トレをして以来。</br>
+        ウオーミングアップを開始した田中に対し、</br>
+        ブルペンでの投球練習を終えた大谷が、小走りに掛け寄り、</br>
+        帽子を取ってあいさつ。互いに握手を交わし、</br>
+        立ったまま約６分間ほど話し込んだ。
+      </p>
+    </div>
+
+    <!--------------menu------------>
+    <div class="menu">
+      <div class="cen-image-ter">
+        <img src="img/kakko.png" alt="">
+        <h2 class="head_1">おしながき</h2>
+      </div>
+
+      <!-------------black bread1------------>
+      <div class="cen-image-ter">
+        <img src="img/circle-bk.png" alt="">
+        <h2 class="head_2">おかずこっぺ<br>黒</h2>
+      </div>
+    <ul class="menu_list">
+        <li>
+          <img src="img/bread.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>たまご</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>たまごハム</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>たまごチーズ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/meatsource.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ミートソース</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ミートたまご</th><td class="red">300円</td>
+              </tr>
+            </table>
+        </li>
+        <li>
+          <img src="img/curry.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>キーマカレー</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>カレーたまご</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/yakisoba.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>やきそば</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>たまそば</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/napori.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ナポリタン</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ナポリエッグ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/teriyaki.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>照り焼きチキン</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>てりたま</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/syouga.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>豚生姜焼き</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+      </ul>
+
+      <!-------------white bread1------------>
+      <div class="cen-image-ter">
+        <img src="img/circle-wh.png" alt="">
+        <h2 class="head_3">おかずこっぺ<br>白</h2>
+      </div>
+      <ul class="menu_list">
+        <li>
+          <img src="img/potato.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ポテトサラダ</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>エッグポテト</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/gobou.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ごぼうサラダ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/tunamayo.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ツナマヨ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/syakemayo.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>鮭マヨ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/beef.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>コンビーフ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/hammayo.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ハムマヨ</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>からしハム</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ハムチーズ</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>からしハムチーズ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/sausage.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ソーセージドック</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ソーセージキーマ</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ソーセージミート</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ソーセージたまご</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+      </ul>
+
+      <div class="topping_main">
+        <div class="topping_ribbon">
+          <img src="img/ribbon.png" alt="">
+          <h3 class="topp_head01">おやつこっぺトッピング</h3>
+        </div>
+
+        <div class="topping_price">
+          <div class="inner">
+            <div class="price_img">
+              <img src="img/sikaku.png" alt="">
+              <p>20円</p>
+            </div>
+            <ul>
+              <li>・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ<br>
+                ・マヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ<br>
+                ・ケチャップ・ケチャップ・ケチャップ・ケチャップ<br>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ<br>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="inner">
+            <div class="price_img">
+              <img src="img/sikaku.png" alt="">
+              <p>20円</p>
+            </div>
+
+            <ul>
+              <li>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+
+              </li>
+              <li>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+
+              </li>
+            </ul>
+          </div>
+
+          <div class="inner">
+            <div class="price_img">
+              <img src="img/sikaku.png" alt="">
+              <p>20円</p>
+            </div>
+            <ul>
+              <li>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+                ・からしマヨネーズ・ケチャップ・ケチャップ・ケチャップ・ケチャップ・ケチャップ</br>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-------------sweet------------>
+      <div class="sweet">
+        <div class="cen-image-ter">
+          <img src="img/circle-bk-1.png" alt="">
+          <h2 class="head_3">おかずこっぺ<br>黒　白</h2>
+        </div>
+        <ul class="menu_list">
+          <li>
+            <img src="img/cream.png" alt="">
+            <div class="pricebox">
+              <table class="qqq">
+                <tr>
+                  <th>クリームブリュレ</th><td class="red">300円</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="migi">
+            <img src="img/monbran.png" alt="">
+            <div class="pricebox">
+              <table class="qqq">
+                <tr>
+                  <th>モンブラン</th><td class="red">300円</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li>
+            <img src="img/castard.png" alt="">
+            <div class="pricebox">
+              <table class="qqq">
+                <tr>
+                  <th>カスタードフルーツ</th><td class="red">300円</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="migi">
+            <img src="img/fujibanana.png" alt="">
+            <div class="pricebox">
+              <table class="qqq">
+                <tr>
+                  <th>富士バナナ</th><td class="red">300円</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li>
+            <img src="img/cheese.png" alt="">
+            <div class="pricebox">
+              <table class="qqq">
+                <tr>
+                  <th>レアチーズ</th><td class="red">300円</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="migi">
+            <img src="img/mis.png" alt="">
+            <div class="pricebox">
+              <table class="qqq">
+                <tr>
+                  <th>ティラミス</th><td class="red">300円</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li>
+            <img src="img/fruits.png" alt="">
+            <div class="pricebox">
+              <table class="qqq">
+                <tr>
+                  <th>フルーツサンド</th><td class="red">300円</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="topping_main">
+        <div class="topping_ribbon">
+          <img src="img/ribbon.png" alt="">
+          <h3 class="topp_head01">おやつこっぺトッピング</h3>
+        </div>
+
+        <div class="topping_price">
+          <div class="inner">
+            <div class="price_img">
+              <img src="img/sikaku.png" alt="">
+              <p>20円</p>
+            </div>
+            <ul>
+              <li>・ケチャップ<br>
+                ・マヨネーズ<br>
+                ・からしマヨネーズ<br>
+                ・からしマヨネーズ<br>
+              </li>
+              <li>・ケチャップ<br>
+                ・マヨネーズ<br>
+                ・からしマヨネーズ<br>
+                ・からしマヨネーズ<br>
+              </li>
+            </ul>
+          </div>
+
+          <div class="inner">
+            <div class="price_img">
+              <img src="img/sikaku.png" alt="">
+              <p>20円</p>
+            </div>
+
+            <ul>
+              <li>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+
+              </li>
+              <li>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="inner">
+            <div class="price_img">
+              <img src="img/sikaku.png" alt="">
+              <p>20円</p>
+            </div>
+            <ul>
+              <li>・ケチャップ<br>
+                ・マヨネーズ<br>
+                ・からしマヨネーズ<br>
+                ・からしマヨネーズ<br>
+              </li>
+              <li>・ケチャップ<br>
+                ・マヨネーズ<br>
+                ・からしマヨネーズ<br>
+                ・からしマヨネーズ<br>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-------------black bread1------------>
+      <div class="cen-image-ter">
+        <img src="img/circle-bk.png" alt="">
+        <h2 class="head_2">おかずこっぺ<br>黒</h2>
+      </div>
+      <ul class="menu_list">
+        <li>
+          <img src="img/zunda.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ずんだ</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ずんだホイップ</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ずんだバター</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ずんだチーズ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/mattya.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+            <tr>
+              <th>抹茶</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>抹茶ホイップ</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>抹茶バター</th><td class="red">300円</td>
+            </tr>
+          </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/houji.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+            <tr>
+              <th>ほうじ茶</th><td class="red">300円</td>
+            </tr>
+          </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/choko.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+            <tr>
+              <th>チョコレート</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>チョコレートホイップ</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>黒サンダー</th><td class="red">300円</td>
+            </tr>
+          </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/caswhite.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+            <tr>
+              <th>カスタード</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>カスタードホイップ</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>カスタードチーズ</th><td class="red">300円</td>
+            </tr>
+          </table>
+          </div>
+        </li>
+
+        <li class="migi">
+          <img src="img/cheesehoip.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+            <tr>
+              <th>チーズホイップ</th><td class="red">300円</td>
+            </tr>
+          </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/pistachio.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+            <tr>
+              <th>ピスタチオ</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>ピスタチオバター</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>ピスタチオチーズ</th><td class="red">300円</td>
+            </tr>
+          </table>
+          </div>
+        </li>
+      </ul>
+
+      <!-------------white bread1------------>
+      <div class="cen-image-ter">
+        <img src="img/circle-wh.png" alt="">
+        <h2 class="head_3">おかずこっぺ<br>白</h2>
+      </div>
+      <ul class="menu_list">
+        <li>
+          <img src="img/anko.png" alt="">
+          <div class="pricebox">
+          <table class="qqq">
+            <tr>
+              <th>あんこ</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>あんこホイップ</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>あんバター</th><td class="red">300円</td>
+            </tr>
+            <tr>
+              <th>あんチーズ</th><td class="red">300円</td>
+            </tr>
+          </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/strawberry.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>いちごジャム</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>いちごバター</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>いちごジャムチーズ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/blueberry.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ブルーベリージャム</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ブルーベリージャムバター</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ブルーバリージャムチーズ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/honey.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>はちみつバター</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>はちみつチーズ</th><td class="red">300円</td>
+              </tr>
+              <tr>
+            </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/peanut.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ピーナッツ</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ピーナッツバター</th><td class="red">300円</td>
+              </tr>
+              <tr>
+            </table>
+          </div>
+        </li>
+        <li class="migi">
+          <img src="img/milk.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ミルク</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>バニラ</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>クッキーバニラ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li>
+          <img src="img/ram.png" alt="">
+          <div class="pricebox">
+            <table class="qqq">
+              <tr>
+                <th>ラムレーズン</th><td class="red">300円</td>
+              </tr>
+              <tr>
+                <th>ラムレーズンホイップ</th><td class="red">300円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+      </ul>
+
+      <div class="topping_main">
+        <div class="topping_ribbon">
+          <img src="img/ribbon.png" alt="">
+          <h3 class="topp_head01">おやつこっぺトッピング</h3>
+        </div>
+
+        <div class="topping_price">
+          <div class="inner">
+            <div class="price_img">
+              <img src="img/sikaku.png" alt="">
+              <p>20円</p>
+            </div>
+            <ul>
+              <li>・ケチャップ<br>
+                ・マヨネーズ<br>
+                ・からしマヨネーズ<br>
+                ・からしマヨネーズ<br>
+              </li>
+              <li>・ケチャップ<br>
+                ・マヨネーズ<br>
+                ・からしマヨネーズ<br>
+                ・からしマヨネーズ<br>
+              </li>
+            </ul>
+          </div>
+
+          <div class="inner">
+            <div class="price_img">
+              <img src="img/sikaku.png" alt="">
+              <p>20円</p>
+            </div>
+
+            <ul>
+              <li>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+
+              </li>
+              <li>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+                ・からしマヨネーズ</br>
+
+              </li>
+            </ul>
+          </div>
+
+          <div class="inner">
+            <div class="price_img">
+              <img src="img/sikaku.png" alt="">
+              <p>20円</p>
+            </div>
+            <ul>
+              <li>・ケチャップ<br>
+                ・マヨネーズ<br>
+                ・からしマヨネーズ<br>
+                ・からしマヨネーズ<br>
+              </li>
+              <li>・ケチャップ<br>
+                ・マヨネーズ<br>
+                ・からしマヨネーズ<br>
+                ・からしマヨネーズ<br>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-------------google map------------>
+
+      <div class="googlemap">
+        <div class="whmap">
+          <div class="cen-image-ter">
+            <img src="img/kakko.png" alt="">
+            <h2 class="head_1">店舗情報</h2>
+          </div>
+          <p>コッペパン専門店　黒と白</p>
+
+          <div class="ggm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.102061308161!2d137.21861731495304!3d36.69608528125379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff79091b82096d3%3A0xd548860070848811!2z44Kz44OD44Oa44OR44Oz5bCC6ZaA5bqXIOm7kuOBqOeZvQ!5e0!3m2!1sja!2sjp!4v1558403550470!5m2!1sja!2sjp"
+              wispanh="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <table class="pc">
+            <tr>
+              <th>住所</th>
+              <td>富山県　富山市　東田地方1-3-19</td>
+            </tr>
+            <tr>
+              <th>交通手段</th>
+              <td>電気ビル前駅から441m</td>
+            </tr>
+          </table>
+          <div class="pc">
+            <dl>
+              <dt>営業時間</dt><br>
+              <dd>
+                [月・火・木・金]7:00~17:00<br>
+                [土・日・祝]9:00~17:00<br>
+                日曜営業
+              </dd>
+              <dt>TEL</dt><br>
+              <dd>090-9443-9646</dd>
+            </dl>
+          </div>
+          <div class="sp">
+            <dl>
+              <dt>住所</dt>
+              <dd>富山県　富山市　東田地方1-3-19<br>
+                電気ビル前駅から441m
+              </dd>
+              <dt>営業時間</dt>
+              <dd>
+                [月・火・木・金]7:00~17:00<br>
+                [土・日・祝]9:00~17:00<br>
+                日曜営業
+              </dd>
+              <dt>定休日</dt>
+              <dd>水曜日</dd>
+              <dt>TEL</dt>
+              <dd>090-9443-9646</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!-------------footer------------>
+      <div id="footer">
+        <div class="g_navi">
+          <img src="img/f-logo.jpg" alt="">
+        </div>
+        <div class="low_sns">
+          <li><a href><img src="img/facebook-1.png" alt=""></a></li>
+          <li class="insta"><a href><img src="img/instagram-1.png" alt=""></a></li>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </main>
+
+
+</body>
+
+</html>

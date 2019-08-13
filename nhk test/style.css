@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tr, th, td,
+article, aside, canvas, details, embed,
+figure, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1;
+  background-color: #fff;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+#content_main {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.mid_title {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.7;
+  width: 800px;
+  margin: auto;
+}
+
+header {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.header img {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  color: #e4ac6b;
+}
+
+tr {
+  border-bottom: solid 1px #9c9c9c;
+  line-height: 3;
+}
+
+/*------------content_first--------------*/
+#content_first {
+  text-align: center;
+}
+
+.top_image {
+  max-width: 980px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top_title {
+  position: absolute;
+  top: 14px;
+  left: 23%;
+  line-height: 1.5;
+}
+
+.top_title p {
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.top_title .touhu {
+  font-weight: bold;
+  color: #de5f14;
+  font-size: 31px;
+}
+
+.gohan {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.nagano {
+  font-size: 50px;
+  color: brown;
+}
+
+.allright {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+/*------------article--------------*/
+.daiitibu {
+  position: relative;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.title_1 {}
+
+.dai_text {
+  position: absolute;
+  top: 25px;
+  left: 23%;
+  text-align: -webkit-center;
+  line-height: 1.5;
+}
+
+.dai_text p {
+  color: #fff;
+  padding: 10px;
+  background-color: brown;
+  width: 68px;
+}
+
+.happy {
+  font-size: 34px;
+}
+
+.mendoku {
+  line-height: 1.7;
+  width: 800px;
+  margin: auto;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+.mendoku p {
+  line-height: 1.7;
+  width: 800px;
+  margin: auto;
+  text-align: justify;
+}
+
+.syasen {
+  margin-top: 40px;
+}
+
+.daiitibu_1 {
+  width: 800px;
+  margin: auto;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.imgimg {
+  position: absolute;
+  top: 0;
+  margin: 30px;
+}
+
+.imgimg p {
+  line-height: 1.7;
+  letter-spacing: 2px;
+}
+
+.health_heal {
+  float: right;
+  margin-left: 35px;
+}
+
+.yellow_back {
+  background-color: #f1e08d;
+  height: auto;
+  margin-top: 13%;
+  padding: 45px 0;
+  max-width: 980px;
+}
+
+.cooking {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cooking img {
+  width: 50%;
+}
+
+.water {
+  text-align: center;
+  background-color: #fff;
+  width: 800px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.water span {
+  color: #DE5F12;
+}
+
+.water img {
+  margin-top: 30px;
+}
+
+.water p, span {
+  font-size: 24px;
+}
+
+.sitami p {
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.resipy {
+  background-color: #fff;
+  height: auto;
+  width: 800px;
+  margin: auto;
+  margin-top: 70px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.res_img img {
+  width: 100%;
+}
+
+.res_text {
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 19%;
+  color: orange;
+}
+
+.res_text p {
+  font-size: 20px;
+      font-weight: bold;
+      line-height: 1.3;
+      letter-spacing: 2px;
+}
+
+.res_text .black_text {
+  font-size: 32px;
+  color: black;
+  margin-top: 15px;
+}
+
+.don {
+  text-align: center;
+  margin: 30px;
+}
+
+.don img {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 30px;
+}
+
+/* tr .tab_l {
+  color: orange;
+} */
+.tab_r, .tab_lr {
+  text-align: right;
+}
+
+.ttt {
+  color: orange;
+  font-weight: bold;
+  border-bottom: solid 5px #f1e08d;
+}
+
+tr:last-child {
+  border: none;
+}
+
+.con_left {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.zairyou {
+  width: 53%;
+}
+
+.tukuri {
+  width: 43%;
+  line-height: 1.7;
+}
+
+.tab_rrr span {
+  font-size: 15px;
+}
+
+.tab_rrr p {
+  margin: 0;
+}
+
+.tab_lll {
+  color: brown;
+}
+
+td .color_text {
+  color: #8b2122;
+}
+
+.tab_rrr li {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  position: relative;
+  padding-left: 35px;
+}
+
+.numnum {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 50%;
+  background-color: #ff81a1;
+  width: 28px;
+  height: 28px;
+  padding-right: 0.25em;
+  letter-spacing: -0.2em;
+}
+
+.ttt_ttt {
+  color: orange;
+  font-weight: bold;
+  border-bottom: solid 5px #f1e08d;
+  margin-top: 1px;
+  line-height: 3;
+  padding: 0;
+}
+
+.syoukai {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.sirai {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 3px solid red;
+    line-height: 3;
+}
+
+.syoukai span {
+  font-size: 15px;
+  letter-spacing: 1px;
+      line-height: 1.5;
+}
+.sirai .san {
+  font-size: 15px;
+  font-weight: normal;
+}

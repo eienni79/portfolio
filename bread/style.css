@@ -1,0 +1,797 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td dl, ul {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  list-style: none;
+}
+
+/* .pc {
+  display: block !important;
+} */
+.sp {
+  display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
+}
+
+.menu-container {
+  margin: 0;
+}
+
+.menu-container .menu {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-container .menu .menu-item {
+  flex: 1;
+}
+
+.menu-container .menu .menu-item a {
+  background: #fff;
+  border-right: 1px solid #ccc;
+  color: #333;
+  display: block;
+  padding: 0.6em 0.4em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu-container .menu .menu-item a:hover {
+  background: #ccc;
+  color: #ffffff;
+}
+
+.menu-container .menu .menu-item:last-child a {
+  border-right: none;
+}
+
+.pricebox .red {
+  color: red;
+}
+
+/*-------------header-------------*/
+#header .nav-content {
+  display: none;
+}
+
+#header .g_navi {
+  /* list-style: none; */
+  display: flex;
+  padding: 0 0 10px 0;
+}
+
+#header .g_navi ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  /* padding: 0; */
+}
+
+#header .g_navi ul li {
+  /* list-style: none; */
+  margin-right: 46px;
+  line-height: 65px;
+}
+
+#header .g_navi .face {
+  margin-right: 10px;
+}
+
+#header .g_navi ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#header .g_navi ul li img {
+  vertical-align: middle;
+}
+
+#header .top_img img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.NavMenu .top_sns {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  height: 62.19px;
+  width: 25%;
+}
+
+.NavMenu .top_sns .fb_sns {
+  border-bottom: none;
+}
+
+/*-------------about-------------*/
+#main .about {
+  text-align: center;
+  font-size: 16px;
+  max-width: 571px;
+  margin: 50px auto;
+}
+
+#main .about::before {
+  content: '';
+  padding-bottom: 60px;
+  display: block;
+  background: url(img/dot.png) no-repeat center;
+  margin: 0 10px;
+}
+
+#main .about::after {
+  content: '';
+  padding-bottom: 60px;
+  display: block;
+  background: url(img/dot.png) no-repeat center;
+  margin: 0 10px;
+}
+
+#main .about p {
+  margin: 60px 30px;
+  letter-spacing: -0.5px;
+  line-height: 2;
+}
+
+#main .about .cen-image-ter {
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#main .about .cen-image-ter .head_1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%)
+}
+
+/*------------menu------------*/
+#main .menu .cen-image-ter .head_1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%)
+}
+
+#main .menu .cen-image-ter {
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#main .menu .cen-image-ter .head_2 {
+  color: #fff;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#main .menu .menu_list {
+  max-width: 1000px;
+  display: flex;
+  text-align: center;
+  /* margin: 50px 0 50px; */
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+  width: 100%;
+}
+
+#main .menu .menu_list .price {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#main .menu .menu_list .pricebox {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+/*
+.pricebox .ppp li {
+  width: 35%;
+  margin: 0 auto;
+} */
+
+.pricebox .qqq th {
+  width: 70%;
+  margin: 0 auto;
+}
+.pricebox .qqq td {
+  width: 30%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+/* #main .menu ul li {
+  width: 32%;
+  padding-left: 1%;
+} */
+
+/* .menu .menu_list img {
+  width: 90%;
+} */
+
+.pricebox .qqq {
+  text-align: left;
+  width: 100%;
+  line-height: 2;
+}
+
+.pricebox .ppp {
+  width: 100%;
+}
+
+.menu_list li {
+  width: 33.333%;
+}
+
+/*------------コッペ白------------*/
+#main .menu .cen-image-ter .head_3 {
+  color: #000;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*------------topping------------*/
+#main .topping_main {
+  color: #fff;
+  text-align: center;
+  padding: 60px 0 80px;
+  width: 100%;
+  margin-top: 70px;
+  background-size: cover;
+  background-image: url(img/black_back.png);
+}
+
+#main .topping_main .topping_ribbon {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+#main .topping_main .topping_ribbon .topp_head01 {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#main .topping_main .topping_price {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#main .topping_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main .topping_price .inner {
+  text-align: left;
+  width: 33.333%;
+}
+
+#main .topping_main .price_img {
+  position: relative;
+  display: inline-block;
+}
+
+#main .topping_price .inner p {
+  color: #fff;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  top: 11%;
+  left: 51%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#main .topping_main .topping_price ul {
+  display: flex;
+  margin-top: 22px;
+  padding: 0;
+  width: 87%;
+}
+
+#main .topping_price .inner ul li {
+  letter-spacing: -0.5px;
+  line-height: 2;
+  font-size: 12px;
+  width: 100%;
+}
+
+/*------------sweet------------*/
+#main .sweet .cen-image-ter .head_3 {
+  color: #fff;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*-------------google map------------*/
+#main .googlemap {
+  text-align: center;
+  background: url(img/lenga.jpg);
+  padding: 50px 20%;
+  background-size: cover;
+}
+
+#main .googlemap .whmap {
+  background-color: #fff;
+  opacity: 0.8;
+  padding: 20px 90px 60px 90px;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* width: 100%; */
+  height: auto;
+}
+
+#main .googlemap .cen-image-ter {
+  position: relative;
+  /* margin-top: 15%; */
+}
+
+#main .googlemap .cen-image-ter .head_1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#main .googlemap p {
+  text-align: center;
+  margin: 35px 0;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+
+#main .googlemap dd {
+  margin: 0 auto;
+}
+
+.googlemap table {
+  width: 100%;
+  border: solid 1px #d6ceb4;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.googlemap table th {
+  text-align: left;
+  border: solid 1px #d6ceb4;
+  background: #eeece5;
+  padding: 1%;
+  font-size: 15px;
+}
+
+.googlemap table td {
+  border: solid 1px #d6ceb4;
+  text-align: left;
+  padding: 0 0 0 1%;
+  font-size: 15px;
+}
+
+#main .googlemap .pc dl {
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#main .googlemap .pc dt {
+  border-bottom: 2px solid #000;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+#main .googlemap .pc dd {
+  margin-top: 10px;
+  margin-left: auto;
+  line-height: 33px;
+}
+
+.ggm {
+  position: relative;
+  padding-bottom: 100%;
+  padding-top: 35px;
+  /* height: 0; */
+  overflow: hidden;
+}
+
+.ggm iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------footer------------*/
+#footer {
+  background-color: #000;
+  padding: 30px 0;
+  text-align: center;
+}
+
+#footer .g_navi {
+  width: 100%;
+}
+
+#footer .g_navi img {
+  display: block;
+  margin: 0 auto;
+}
+
+#footer .low_sns {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.low_sns li {
+  padding: 0 10px 0 0;
+}
+
+.low_sns .insta {
+  padding: 0 0 0 10px;
+}
+
+#footer .low_sns img {
+  display: block;
+  margin: 0 auto;
+}
+
+/*-------------レスポンス 767px------------*/
+@media screen and (max-width: 767px) {
+
+  .pricebox .qqq {
+    font-size: 11px;
+  }
+  .logo_l {
+    /* padding: 0 0 0 10px; */
+    width: 100%;
+    top: 0;
+    left: 10px;
+    margin-top: 10px;
+    position: fixed;
+  }
+
+  #main {
+    width: 100%;
+  }
+
+  .top_img {
+    width: 100%;
+  }
+
+  .logo_l img {
+    width: 12%;
+  }
+
+  .top_img {
+    padding-top: 14.5%
+  }
+
+  #main .about {
+    font-size: 4vw;
+  }
+
+  #main .menu ul li {
+    width: 44%;
+    margin: 0;
+    padding-left: 16px;
+  }
+
+  #main .menu .migi {
+    padding-left: 13px;
+    /* margin: 0 auto; */
+  }
+
+  #main .menu .menu_list {}
+
+  #main .menu ul li img {
+    width: 100%;
+  }
+
+  #main .topping_price .inner p {
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: 10%;
+    left: 51%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #main .topping_main .topping_price {
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-center;
+  }
+
+  #main .topping_main .topping_ribbon img {
+    width: 80%;
+  }
+
+  #main .topping_main .topping_ribbon .topp_head01 {
+    font-size: 14px;
+  }
+
+  #main .topping_price .inner {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #main .topping_price .inner img {
+    width: 100%;
+  }
+
+  #main .topping_main .topping_price ul {
+    text-align: center;
+    margin: 22px auto 22px;
+    display: block;
+  }
+
+  #main .topping_main .topping_price ul li {
+    text-align: center;
+    margin: 22px auto 22px;
+    display: block;
+  }
+
+  #main .topping_main .topping_price ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  #main .googlemap .whmap {
+    background-color: #fff;
+    opacity: 0.8;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* width: 100%; */
+    height: auto;
+    padding: 0 20px;
+  }
+
+  #main .googlemap {
+    padding: 0;
+  }
+
+  #main .googlemap .sp dt {
+    border-bottom: solid 2px #000;
+    display: inline-block;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+
+  #main .googlemap .sp dl {
+    font-weight: bold;
+    margin: 30px auto;
+  }
+
+  #main .googlemap .sp dd {
+    margin: 0 auto;
+    line-height: 2;
+    padding: 20px 0;
+  }
+
+  #main .googlemap p {}
+
+  #header .g_navi {
+    display: none;
+  }
+
+  .pricebox .price {
+    /* text-align: left; */
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .price .qqq {}
+
+  .price .ppp {
+    padding: 0;
+    margin-left: 54px;
+  }
+
+  .menu_list .pricebox ul .ppp {
+    font-size: 10px;
+    width: 21%;
+  }
+
+  .menu_list .pricebox ul .qqq {
+    font-size: 2vw;
+    width: 83%;
+  }
+
+  /*---------hamberger----------*/
+  .to_lo {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 62px;
+    top: -7px;
+    z-index: 4;
+    left: 0;
+  }
+
+  .to_lo img {
+    width: 12%;
+    padding-top: 6px;
+  }
+
+  /*ナビメニューのスタイルを指定*/
+  nav.NavMenu {
+    position: fixed;
+    /*表示位置を固定*/
+    z-index: 2;
+    /*重ね順を変更*/
+    top: -3%;
+    /*表示位置を指定*/
+    left: 0;
+    /*表示位置を指定*/
+    background: #fff;
+    /*背景を白にする*/
+    color: #000;
+    /*文字色を黒にする*/
+    text-align: center;
+    /*テキストを中央揃え*/
+    width: 100%;
+    /*全幅表示*/
+    transform: translateY(-100%);
+    /*ナビを上に隠す*/
+    transition: all 0.6s;
+    /*アニメーションの時間を指定*/
+  }
+
+  nav.NavMenu ul {
+    background: #ccc;
+    /*背景をグレーにする*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 80px;
+  }
+
+  nav.NavMenu ul li {
+    /* font-size: 1.1em; */
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px dotted #333;
+    text-decoration: none;
+  }
+
+  nav.NavMenu ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    /*最後のメニュー項目のみ下線を消す*/
+  }
+
+  nav.NavMenu ul li a {
+    display: block;
+    /*クリックできる領域を広げる*/
+    color: #000;
+    padding: 1em 0;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /*トグルボタンが押されたときに付与するクラス*/
+  nav.NavMenu.active {
+    transform: translateY(0%);
+  }
+
+  /*トグルボタンのスタイルを指定*/
+  .Toggle {
+    display: block;
+    position: fixed;
+    /* right: 13px; */
+    top: 1%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 3;
+    left: 88%;
+  }
+
+  .Toggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #000;
+    -webkit-transition: .35s ease-in-out;
+    /*変化の速度を指定*/
+    -moz-transition: .35s ease-in-out;
+    /*変化の速度を指定*/
+    transition: .35s ease-in-out;
+    /*変化の速度を指定*/
+    left: 6px;
+  }
+
+  .Toggle span:nth-child(1) {
+    top: 9px;
+  }
+
+  .Toggle span:nth-child(2) {
+    top: 18px;
+  }
+
+  .Toggle span:nth-child(3) {
+    top: 27px;
+  }
+
+  /* 最初のspanをマイナス45度に */
+  .Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  /* 2番目と3番目のspanを45度に */
+  .Toggle.active span:nth-child(2),
+  .Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
